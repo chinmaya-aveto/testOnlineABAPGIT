@@ -104,7 +104,7 @@ FORM display_alv.
       OTHERS               = 2.
 
   IF sy-subrc <> 0.
-    MESSAGE 'Error displaying ALV' TYPE 'I'.
+    MESSAGE 'Error displaying ALV from GIT' TYPE 'I'.
   ENDIF.
 
 ENDFORM.
