@@ -264,7 +264,8 @@ CLASS lcl_report IMPLEMENTATION.
     DATA: lt_events TYPE cntl_simple_events,
           ls_event  TYPE cntl_simple_event.
 
-    ls_event-eventid    = cl_gui_dialogbox_container=>eventid_close.
+    " CLOSE event of CL_GUI_DIALOGBOX_CONTAINER (constant not available on all ECC releases)
+    ls_event-eventid    = 1.
     ls_event-appl_event = abap_true.
     APPEND ls_event TO lt_events.
 
@@ -447,7 +448,7 @@ CLASS lcl_report IMPLEMENTATION.
       `.bar{height:14px;}` &&
       `</style></head><body>` &&
       `<table class="top"><tr>` &&
-      |<td><h2>Sales dashboard - plant { p_werks }</h2><div class="lbl">Period { lv_period } | { mv_waerk }</div></td>| &&
+      |<td><h2>Sales dashboard - plant { p_werks }</h2><div class="lbl">Period { lv_period } / { mv_waerk }</div></td>| &&
       `<td align="right"><a class="btn" href="sapevent:CLOSE">Close</a></td>` &&
       `</tr></table>` &&
       `<table class="kpi"><tr>` &&
