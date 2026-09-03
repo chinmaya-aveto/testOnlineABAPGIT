@@ -22,6 +22,12 @@
      <LENGTH>19</LENGTH>
     </item>
     <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Dashboard</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
      <ID>S</ID>
      <KEY>P_WERKS</KEY>
      <ENTRY>.</ENTRY>
